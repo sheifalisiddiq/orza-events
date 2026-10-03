@@ -1,0 +1,34 @@
+{
+  "name": "orza-entertainment",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@fontsource-variable/manrope": "^5.3.0",
+    "@fontsource/instrument-serif": "^5.3.0",
+    "@gsap/react": "^2.1.2",
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.26",
+    "next": "^16.3.8",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.3.8",
+    "prettier": "^3.9.9",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^6.0.3"
+  }
+}
