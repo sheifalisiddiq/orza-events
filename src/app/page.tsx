@@ -73,9 +73,6 @@ export default function Home() {
               <span>25°12′ N &nbsp; 55°16′ E</span>
             </div>
           </div>
-          <span className="concept-label">
-            CAMPAIGN CONCEPT · AI-GENERATED IMAGERY
-          </span>
         </section>
 
         <section

@@ -396,15 +396,6 @@ em {
   border-radius: 50%;
   background: var(--gold);
 }
-.concept-label {
-  position: absolute;
-  bottom: 20px;
-  right: var(--gutter);
-  font-size: 9px;
-  letter-spacing: 0.1em;
-  color: #c4c4c7;
-}
-
 /* Curtains use layered fabric shading; GSAP controls their deformation and opening. */
 .intro {
   display: none;
@@ -2136,11 +2127,6 @@ dialog::backdrop {
   }
   .scroll-line {
     height: 28px;
-  }
-  .concept-label {
-    font-size: 7px;
-    bottom: 22px;
-    letter-spacing: 0.04em;
   }
   .intro-logo {
     width: 140px;
