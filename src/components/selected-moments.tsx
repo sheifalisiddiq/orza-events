@@ -88,13 +88,15 @@ export function SelectedMoments() {
             aria-label={`Open ${moment.title}`}
           >
             <span className="moment-image">
-              <Image
-                src={moment.image}
-                alt=""
-                fill
-                sizes="(max-width: 700px) 90vw, 42vw"
-                quality={85}
-              />
+              <span className="parallax-inner">
+                <Image
+                  src={moment.image}
+                  alt=""
+                  fill
+                  sizes="(max-width: 700px) 90vw, 42vw"
+                  quality={85}
+                />
+              </span>
             </span>
             <span className="moment-meta">
               <span>{moment.category}</span>

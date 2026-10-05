@@ -1447,6 +1447,16 @@ html[data-intro="waiting"] .intro {
   height: min(52vh, 540px);
   clip-path: polygon(4% 3%, 96% 0, 100% 94%, 0 100%);
 }
+.parallax-inner {
+  position: absolute;
+  inset: -8% 0;
+  display: block;
+}
+@media (max-width: 799px) {
+  .parallax-inner {
+    inset: -5% 0;
+  }
+}
 .moment-image img {
   object-fit: cover;
   transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);

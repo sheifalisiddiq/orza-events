@@ -42,14 +42,16 @@ export function Programme() {
       </div>
       <div className="programme-body">
         <div className="programme-image">
-          <Image
-            key={active}
-            src={programme[active].image}
-            alt={`Campaign concept illustrating ${programme[active].label.toLowerCase()}`}
-            fill
-            sizes="(max-width: 800px) 90vw, 36vw"
-            style={{ objectPosition: programme[active].position }}
-          />
+          <span className="parallax-inner">
+            <Image
+              key={active}
+              src={programme[active].image}
+              alt={`Campaign concept illustrating ${programme[active].label.toLowerCase()}`}
+              fill
+              sizes="(max-width: 800px) 90vw, 36vw"
+              style={{ objectPosition: programme[active].position }}
+            />
+          </span>
           <span>ORZA / CAMPAIGN CONCEPT</span>
         </div>
         <div className="programme-list">

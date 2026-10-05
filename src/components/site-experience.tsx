@@ -380,6 +380,26 @@ export function SiteExperience({ children }: { children: ReactNode }) {
         );
       });
 
+      const drift = (amount: number, scrub: number | boolean) =>
+        q(".parallax-inner").forEach((inner: HTMLElement) =>
+          gsap.fromTo(
+            inner,
+            { yPercent: -amount },
+            {
+              yPercent: amount,
+              ease: "none",
+              scrollTrigger: {
+                trigger: inner.parentElement,
+                start: "top bottom",
+                end: "bottom top",
+                scrub,
+              },
+            },
+          ),
+        );
+      responsive.add("(min-width: 800px)", () => drift(7, 1));
+      responsive.add("(max-width: 799px)", () => drift(3.5, true));
+
       const journey = q(".scroll-journey")[0] as HTMLElement | undefined;
       const journeyStage = q(".journey-stage")[0] as HTMLElement | undefined;
       const journeyFrames = q(".journey-frame") as HTMLElement[];
